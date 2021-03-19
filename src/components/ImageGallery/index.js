@@ -1,10 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'gatsby-image';
 import { ImageGalleryWrapper } from './styles';
 import ImageThumbnail from './ImageThumbnail';
 
-const ImageGallery = ({ images }) => {
-  const [activeImageThumbnail, setActiveImageThumbnail] = useState(images[0]);
+const ImageGallery = ({ selectedVariantImageId, images }) => {
+  const [activeImageThumbnail, setActiveImageThumbnail] = useState(
+    images.find(({ id }) => id === selectedVariantImageId) || images[0]
+  );//setting the active image to the selected variant or defaulting to first of array
+
+  useEffect(() => {
+    setActiveImageThumbnail(
+      images.find(({ id }) => id === selectedVariantImageId) || images[0]
+    );
+  }, [selectedVariantImageId, images, setActiveImageThumbnail]);
+  //this useEfect is is taking care of any time we change the slected variant after initail render
+
   const handleClick = image => {
     setActiveImageThumbnail(image);
   };

@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 import { graphql } from 'gatsby';
 import { Layout, ImageGallery } from 'components';
 import { Grid } from './styles';
+import CartContext from '../../context/CartContext';
 
 //gatsby page query
 export const query = graphql`
   query ProductQuery($shopifyId: String) {
     shopifyProduct(shopifyId: { eq: $shopifyId }) {
+      shopifyId
       title
       description
       images {
@@ -24,7 +26,15 @@ export const query = graphql`
 `;
 
 const ProductTemplate = props => {
-  console.log(props);
+  const { getProductById } = useContext(CartContext); //destructuring from catr context
+  console.log(props.data.shopifyProduct.shopifyId);
+
+  useEffect(() => {
+    getProductById(props.data.shopifyProduct.shopifyId).then(result => {
+      console.log(result);
+    });
+  }, []);
+
   return (
     <Layout>
       <Grid>

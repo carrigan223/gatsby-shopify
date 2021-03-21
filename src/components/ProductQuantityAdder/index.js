@@ -1,15 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from '../Button';
 import { Input } from '../Input';
 import { ProductQuantityAdderWrapper } from './styles';
 
-const ProductQuantityAdder = ({ variantId, availabel }) => {
+const ProductQuantityAdder = ({ variantId, available }) => {
+  const [quantity, setQuantity] = useState(1);
+
+  const handleQuantityChange = e => {
+    setQuantity(e.currentTarget.value);
+  }; //handling the state of quantity when changed in the input
+
+  const handleSubmit = e => {
+    e.preventDefault();
+  }; //handling the submiting the item and quantity to the cart
+
   return (
     <ProductQuantityAdderWrapper>
       <strong>Quantity</strong>
-      <form>
-        <Input />
-        <Button fullWidth>Add To Cart</Button>
+      <form onSubmit={handleSubmit}>
+        <Input
+          type="number"
+          min="1"
+          step="1"
+          disabled={!available}
+          value={quantity}
+          onChange={handleQuantityChange}
+        />
+        <Button fullWidth disabled={!available} type="submit">
+          Add To Cart
+        </Button>
       </form>
     </ProductQuantityAdderWrapper>
   );

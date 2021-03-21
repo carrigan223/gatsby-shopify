@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const Input = styled.input`
-    border: 1px solid #ccc;
+    border: 2px solid #002D72;
     margin-top: 5px;
     box-shadow: 2px 2px 2px;
     display: block;
@@ -13,6 +13,6 @@ export const Input = styled.input`
     box-sizing: border-box;
     min-width: 0;
     &:focus {
-        border-color: black;
+        border-color: red;
     }
 `

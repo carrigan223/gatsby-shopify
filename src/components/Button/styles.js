@@ -1,5 +1,14 @@
 import styled, { css } from 'styled-components';
 
+const fullWidthStyles = ({ fullWidth }) => {
+  if (fullWidth) {
+    return css`
+      display: block;
+      width: 100%;
+    `;
+  }
+};//using css and js to interpolate styles for fullwidth
+
 export const Button = styled.button`
   outline: none;
   padding: 0px 10px;
@@ -12,16 +21,18 @@ export const Button = styled.button`
   text-transform: uppercase;
   background: white;
   color: black;
-  border: 1px solid black;
+  border: 1px solid #ff5910;
   border-radius: 3px;
   white-space: nowrap;
   margin-top: 5px;
-  box-shadow: 2px 2px 2px;
+  box-shadow: none;
+  /* ${fullWidthStyles} */
 
   &:hover:not(:disabled) {
-    color: white;
-    background: black;
-    border: 1px solid rgba(0, 0, 0, 0);
+    color: black;
+    background-image: linear-gradient(to bottom, #ff5910, white);
+    /* border: 1px solid rgba(0, 0, 0, 0); */
+    box-shadow: 3px 2px 8px 1px;
   }
 
   &:disabled {

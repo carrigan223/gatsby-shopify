@@ -22,7 +22,7 @@ const ImageGallery = ({ selectedVariantImageId, images }) => {
   return (
     <ImageGalleryWrapper>
       <div>
-        <Image fluid={activeImageThumbnail.localFile.childImageSharp.fluid} />
+        <Image max-width={300} fluid={activeImageThumbnail.localFile.childImageSharp.fluid} />
       </div>
       <div>
         {images.map(image => {

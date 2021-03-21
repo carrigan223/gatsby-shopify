@@ -5,6 +5,13 @@ export const Grid = styled.section`
   grid-template-columns: 1fr;
   grid-gap: 20px;
   padding-top: 20px;
+
+  > div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
   //setting a media query for desktop to display multiple columns
   @media (min-width: 760px) {
     grid-template-columns: 1fr 1fr; //two columns of equal width
@@ -18,6 +25,8 @@ export const Grid = styled.section`
       order: 1;
     }
   }
+
+  
 `;
 
 export const SelectWrapper = styled.div`

@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { CartWrapper } from './styles';
 import { RiShoppingCartLine } from 'react-icons/ri';
+import CartContext from '../../context/CartContext';
 
 const Cart = () => {
+  const { checkout } = useContext(CartContext);
+  console.log('Checkout: ', checkout);
   return (
     <>
       <CartWrapper>

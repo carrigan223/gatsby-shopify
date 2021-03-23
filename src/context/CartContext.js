@@ -14,6 +14,7 @@ const CartContext = createContext(defaultState);
 export default CartContext;
 
 export function CartContextProvider({ children }) {
+  //checkout is a local state item
   const [checkout, setCheckout] = useState(
     JSON.parse(
       typeof window !== 'undefined' ? localStorage.getItem('checkout') : null
@@ -49,19 +50,26 @@ export function CartContextProvider({ children }) {
     return product;
   }//part of shopify buy and querying for particular id
 
+
+
+  //updatelineitem will take the variantId and quantity to update our global cart state
+  //the shopify API will provide us a new checkoutID
+  //once that checkout id is provided we can then up date by adding lineItems
+  //and storing it against the shopify API
   const updateLineItem = async ({ variantId, quantity }) => {
-    // if no checkout id, create a new checkout
+    // if no checkout id, create a new checkout, otherwise retrieve existing
     let newCheckout = checkout || (await client.checkout.create());
 
     // check to see if this variantId exists in storedCheckout
     const lineItemVariant = newCheckout.lineItems?.find(
       lineItem => lineItem.variant.id === variantId
     );
-
+      //below is the various lgic for different cart update scenarios
     if (lineItemVariant) {
       const newQuantity = lineItemVariant.quantity + quantity;
 
       if (newQuantity) {
+        //use case for updateing quantitty of existing line item
         newCheckout = await client.checkout.updateLineItems(newCheckout.id, [
           {
             id: lineItemVariant.id,
@@ -69,11 +77,13 @@ export function CartContextProvider({ children }) {
           },
         ]);
       } else {
+        //removing a line item if quantity hits 0
         newCheckout = await client.checkout.removeLineItems(newCheckout.id, [
           lineItemVariant.id,
         ]);
       }
     } else {
+      //if line item doesnt exist creating a new line item
       newCheckout = await client.checkout.addLineItems(newCheckout.id, [
         {
           variantId,
@@ -82,7 +92,7 @@ export function CartContextProvider({ children }) {
       ]);
     }
 
-    setCheckout(newCheckout);
+    setCheckout(newCheckout);//setting the local state item of checkout after updates
     setSuccessfulOrder(null);
     if (typeof window !== 'undefined') {
       localStorage.setItem('checkout', JSON.stringify(newCheckout));

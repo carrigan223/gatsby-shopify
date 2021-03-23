@@ -33,7 +33,6 @@ const ProductTemplate = props => {
   const [product, setProduct] = useState(null);
   const [selectedVariant, setSelectedVariant] = useState(null);
   const { search, origin, pathname } = useLocation();
-  console.log(search, origin, pathname);
   const variantId = queryString.parse(search).variant;
 
   //setting the result of the dynamic call to product state

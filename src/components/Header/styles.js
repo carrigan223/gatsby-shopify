@@ -4,8 +4,11 @@ export const HeaderWrapper = styled.header`
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 10px 20px;
+  padding: 20px 20px;
   box-sizing: border-box;
   flex-wrap: wrap;
-  background-color: orange;
+  background-color: black;
+
+
+  border-bottom: 5px solid #FF5910;
 `;

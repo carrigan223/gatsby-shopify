@@ -6,7 +6,7 @@ const Cart = () => {
   return (
     <>
       <CartWrapper>
-        <RiShoppingCartLine size="2em" color="#FF5910"/>
+        <RiShoppingCartLine size="1.5em" color="#FF5910" />
       </CartWrapper>
     </>
   );

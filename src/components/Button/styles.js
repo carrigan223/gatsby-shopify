@@ -7,7 +7,7 @@ const fullWidthStyles = ({ fullWidth }) => {
       width: 100%;
     `;
   }
-};//using css and js to interpolate styles for fullwidth
+}; //using css and js to interpolate styles for fullwidth
 
 export const Button = styled.button`
   outline: none;
@@ -30,9 +30,9 @@ export const Button = styled.button`
 
   &:hover:not(:disabled) {
     color: black;
-    background-image: linear-gradient(to bottom, #ff5910, white);
-    /* border: 1px solid rgba(0, 0, 0, 0); */
-    box-shadow: 3px 2px 8px 1px;
+    background-color: #FF5910;
+    color: white;
+    box-shadow: 3px 2px 8px 1px black;
   }
 
   &:disabled {

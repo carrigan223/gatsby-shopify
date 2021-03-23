@@ -10,5 +10,5 @@ export const HeaderWrapper = styled.header`
   background-color: black;
 
 
-  border-bottom: 5px solid #FF5910;
+  border-bottom: 3px solid #FF5910;
 `;

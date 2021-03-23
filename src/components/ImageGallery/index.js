@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import Image from 'gatsby-image';
-import { ImageGalleryWrapper } from './styles';
+import { ImageGalleryWrapper, MainImage } from './styles';
 import ImageThumbnail from './ImageThumbnail';
 
 const ImageGallery = ({ selectedVariantImageId, images }) => {
   const [activeImageThumbnail, setActiveImageThumbnail] = useState(
     images.find(({ id }) => id === selectedVariantImageId) || images[0]
-  );//setting the active image to the selected variant or defaulting to first of array
+  ); //setting the active image to the selected variant or defaulting to first of array
 
   useEffect(() => {
     setActiveImageThumbnail(
@@ -22,7 +21,10 @@ const ImageGallery = ({ selectedVariantImageId, images }) => {
   return (
     <ImageGalleryWrapper>
       <div>
-        <Image max-width={300} fluid={activeImageThumbnail.localFile.childImageSharp.fluid} />
+        <MainImage
+          max-width={300}
+          fluid={activeImageThumbnail.localFile.childImageSharp.fluid}
+        />
       </div>
       <div>
         {images.map(image => {

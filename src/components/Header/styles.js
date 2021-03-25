@@ -7,8 +7,7 @@ export const HeaderWrapper = styled.header`
   padding: 20px 20px;
   box-sizing: border-box;
   flex-wrap: wrap;
-  background-color: black;
+  background-image: linear-gradient(to bottom, grey, white);
 
-
-  border-bottom: 3px solid #FF5910;
+  /* border-bottom: 3px solid #ff5910; */
 `;

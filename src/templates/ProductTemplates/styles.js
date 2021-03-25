@@ -10,7 +10,7 @@ export const Grid = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    order: 2;
   }
   //setting a media query for desktop to display multiple columns
   @media (min-width: 760px) {
@@ -25,8 +25,6 @@ export const Grid = styled.section`
       order: 1;
     }
   }
-
-  
 `;
 
 export const SelectWrapper = styled.div`
@@ -42,3 +40,5 @@ export const Price = styled.div`
   font-weight: bold;
   font-size: 30px;
 `;
+
+

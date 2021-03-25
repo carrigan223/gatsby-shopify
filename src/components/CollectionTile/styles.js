@@ -11,6 +11,7 @@ export const CollectionTileGrid = styled.div`
   max-height: 100vh;
   display: flex;
   position: relative;
+  border-radius: 10px;
   margin-bottom: 12px;
   > div {
     flex-grow: 1;
@@ -27,7 +28,7 @@ export const CollectionTileContent = styled.div`
   width: 100%;
   color: white;
   border-radius: 10px;
-  box-shadow: 2px 2px 20px black;
+  box-shadow: 5px 6px 25px black;
   text-decoration: none;
   background: rgba(0, 0, 0, 0.55);
 

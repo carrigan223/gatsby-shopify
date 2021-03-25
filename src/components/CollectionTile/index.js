@@ -4,17 +4,17 @@ import {
   CollectionTileContent,
   Title,
   Description,
+  StyledBackgroundImage,
 } from './styles';
-import BackgroundImage from 'gatsby-background-image';
 
-const CollectionTile = ({ title, description, backgroundImage }) => {
+const CollectionTile = ({ title, description, backgroundImage, sale }) => {
   return (
     <CollectionTileGrid>
-      <BackgroundImage fluid={backgroundImage} />
+      <StyledBackgroundImage fluid={backgroundImage} />
       <CollectionTileContent>
         <div>
-          <Title>{title}</Title>
-          <Description>{description}</Description>
+          <Title sale={sale}>{title}</Title>
+          <Description sale={sale}>{description}</Description>
         </div>
       </CollectionTileContent>
     </CollectionTileGrid>

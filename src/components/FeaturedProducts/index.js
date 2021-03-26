@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { FeaturedProductGrid } from '../../components/index';
+import { ProductsGrid } from '../../components/index';
 import ProductContext from '../../context/ProductContext';
 import { FeaturedHeader } from './styles';
 
@@ -17,7 +17,7 @@ const FeaturedProducts = () => {
   return (
     <section>
       <FeaturedHeader>Featured Trading Cards</FeaturedHeader>
-      <FeaturedProductGrid products={featuredCollection.products} />
+      <ProductsGrid products={featuredCollection.products} />
     </section>
   );
 };

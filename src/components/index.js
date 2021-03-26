@@ -13,7 +13,7 @@ export * from './RemoveLineItem';
 export * from './HomePageCollectionsGrid';
 export * from './CollectionTile';
 export * from './FeaturedProducts';
-export * from './FeaturedProductsGrid';
+export * from './ProductsGrid';
 export * from './ProductTile';
 export * from './StyledLink';
 export * from './Filters';

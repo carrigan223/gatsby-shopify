@@ -2,7 +2,7 @@ import React from 'react';
 import { ProductTile } from 'components';
 import { ProductGridwrapper } from './styles';
 
-const FeaturedProductGrid = ({ products }) => {
+const ProductsGrid = ({ products }) => {
   //we are taking in the products contained in our
   //featured product colection to display in a grid format
   return (
@@ -21,4 +21,4 @@ const FeaturedProductGrid = ({ products }) => {
   );
 };
 
-export { FeaturedProductGrid };
+export { ProductsGrid };

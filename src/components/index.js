@@ -16,3 +16,6 @@ export * from './FeaturedProducts';
 export * from './FeaturedProductsGrid';
 export * from './ProductTile';
 export * from './StyledLink';
+export * from './Filters';
+export * from './Checkbox';
+

@@ -2,9 +2,26 @@ import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 
 //this is the graphql query bringin in
-//the Colletion data from shopify
+//the Colletion data and product datafrom shopify
+//top is a fragment creation
 const query = graphql`
+  fragment ProductTileFields on ShopifyProduct {
+    handle
+    priceRange {
+      minVariantPrice {
+        amount
+      }
+    }
+  }
   {
+    allShopifyProduct {
+      edges {
+        node {
+          ...ShopifyProductFields
+          ...ProductTileFields
+        }
+      }
+    }
     allShopifyCollection(sort: { fields: title }) {
       edges {
         node {
@@ -22,12 +39,7 @@ const query = graphql`
           }
           products {
             ...ShopifyProductFields
-            handle
-            priceRange {
-              minVariantPrice {
-                amount
-              }
-            }
+            ...ProductTileFields
           }
         }
       }
@@ -43,11 +55,11 @@ const ProductContext = React.createContext(defaultState);
 export default ProductContext;
 
 export function ProductContextProvider({ children }) {
-  const { allShopifyCollection } = useStaticQuery(query);
+  const { allShopifyCollection, allShopifyProduct } = useStaticQuery(query);
   return (
     <ProductContext.Provider
       value={{
-        products: [],
+        products: allShopifyProduct.edges.map(({ node }) => node),
         collections: allShopifyCollection.edges.map(({ node }) => node),
       }}
     >

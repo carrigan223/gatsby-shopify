@@ -6,26 +6,24 @@ export const CartWrapper = styled(StyledLink).attrs(() => ({
   to: '/cart',
 }))`
   display: flex;
-  margin-left: auto;
   align-items: center;
   border: 3px solid #ff5910;
-  background-color: white;
-  padding: 8px;
+  background: white;
   border-radius: 23px;
-  box-shadow: 1px 2px 30px 10px grey;
+  /* box-shadow: 1px 2px 30px 10px grey; */
   text-decoration: none;
   color: black;
 
   :hover {
-    box-shadow: 1px 2px 30px 12px #ff5910;
-    cursor: pointer;
-    border: 3px solid #002d72;
-    text-decoration: underline 2px #ff5910;
+    color: black;
+    background-color: #ff5910;
+    color: white;
+    box-shadow: 3px 2px 8px 1px black;
   }
 `;
 
 export const IconContainer = styled.div`
-  padding: 0px 15px;
+  padding: 0px 10px;
 `;
 
 export const TextContainer = styled.div`

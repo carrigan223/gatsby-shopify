@@ -18,11 +18,11 @@ const Cart = () => {
     <>
       <CartWrapper>
         <IconContainer>
-          <RiShoppingCartLine size="1.5em" color="#FF5910" />
+          <RiShoppingCartLine size="1.5em" color="#002d72" />
         </IconContainer>
         <TextContainer>
-          <span>${checkout?.totalPrice || '0.00'}</span>
-          <span>{totalQuantity}  item(s)</span>
+          {/* <span>${checkout?.totalPrice || '0.00'}</span>
+          <span>{totalQuantity}  item(s)</span> */}
         </TextContainer>{' '}
       </CartWrapper>
     </>

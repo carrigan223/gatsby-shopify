@@ -18,4 +18,4 @@ export * from './ProductTile';
 export * from './StyledLink';
 export * from './Filters';
 export * from './Checkbox';
-
+export * from './Search';

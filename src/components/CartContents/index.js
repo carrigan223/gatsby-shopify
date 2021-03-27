@@ -1,13 +1,15 @@
 import React, { useContext } from 'react';
 import CartContext from '../../context/CartContext';
-import { QuantityAdjuster, RemoveLineItem } from 'components';
+import { QuantityAdjuster, RemoveLineItem, Button } from 'components';
 import {
   CartItem,
   CartHeader,
   CartTitle,
   CartFooter,
   QuantityContainer,
+  Footer,
 } from './styles';
+import { navigate } from '@reach/router';
 
 const CartContents = () => {
   const { checkout, updateLineItem } = useContext(CartContext);
@@ -17,6 +19,7 @@ const CartContents = () => {
   const handleAdjustQuantity = ({ quantity, variantId }) => {
     updateLineItem({ quantity, variantId });
   };
+  console.log(checkout);
 
   return (
     <section>
@@ -42,7 +45,9 @@ const CartContents = () => {
             <QuantityAdjuster item={item} onAdjust={handleAdjustQuantity} />
           </div>
           <div>${(item.quantity * item.variant.price).toFixed(2)}</div>
-          <div><RemoveLineItem lineItemId={item.id} /></div>
+          <div>
+            <RemoveLineItem lineItemId={item.id} />
+          </div>
         </CartItem>
       ))}
       <CartFooter>
@@ -51,6 +56,20 @@ const CartContents = () => {
           <span> ${checkout?.totalPrice}</span>
         </div>
       </CartFooter>
+      <Footer>
+        <div>
+          <Button onClick={() => navigate(-1)}>Continue Shopping</Button>
+        </div>
+        <div>
+          <Button
+            onClick={() => {
+              window.location.href = checkout.webUrl;
+            }}
+          >
+            Checkout
+          </Button>
+        </div>
+      </Footer>
     </section>
   );
 };

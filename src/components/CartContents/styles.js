@@ -78,6 +78,21 @@ export const CartItem = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+  }
+`;
+
+export const Footer = styled.footer`
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 450px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    > div {
+      padding: 15px 0;
+    }
   }
 `;

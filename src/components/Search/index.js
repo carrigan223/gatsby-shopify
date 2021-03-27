@@ -9,7 +9,6 @@ const Search = () => {
   const [searchTerm, setSearchTerm] = useState(' ');
   const { search } = useLocation();
   const c = queryString.parse(search)?.c || '';
-  console.log('this is c:', c);
 
   //figure out why this is causing the refresh problem
 

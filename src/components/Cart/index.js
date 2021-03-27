@@ -12,7 +12,6 @@ const Cart = () => {
       totalQuantity = totalQuantity + lineItem.quantity;
     });
   }
-  console.log('Checkoutquantity: ', totalQuantity);
 
   return (
     <>
@@ -21,7 +20,7 @@ const Cart = () => {
           <RiShoppingCartLine size="1.5em" color="#002d72" />
         </IconContainer>
         <TextContainer>
-          {/* <span>${checkout?.totalPrice || '0.00'}</span>
+          {/* this is cart info <span>${checkout?.totalPrice || '0.00'}</span>
           <span>{totalQuantity}  item(s)</span> */}
         </TextContainer>{' '}
       </CartWrapper>

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import BackgroundImage from 'gatsby-background-image';
+import { StyledLink } from '../StyledLink';
 
 export const StyledBackgroundImage = styled(BackgroundImage)`
   border-radius: 10px;
@@ -69,4 +70,22 @@ export const Description = styled.p`
   background: ${props => (props.sale ? 'red' : 'rgba(0, 0, 0, 0.3)')};
   border: ${props => (props.sale ? '2px solid white' : 'none')};
   box-shadow: ${props => (props.sale ? '1px 3px 8px 0.8px white' : 'none')};
+`;
+
+export const StyledHomeLink = styled(StyledLink)`
+  border: 1px solid;
+  padding: 8px 15px;
+  color: black;
+  text-decoration: none;
+  background: white;
+  border-color: ${props => (props.sale ? 'red' : '#ff5910')};
+  box-shadow: ${props =>
+    props.sale ? '1px 4px 9px white' : '3px 4px 4px #002d72'};
+  :hover {
+    box-shadow: 1px 3px 8px white;
+    border: 3px solid;
+    border-color: ${props => (props.sale ? 'red' : '#ff5910')};
+
+    font-weight: bold;
+  }
 `;

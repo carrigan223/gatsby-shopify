@@ -5,9 +5,16 @@ import {
   Title,
   Description,
   StyledBackgroundImage,
+  StyledHomeLink
 } from './styles';
 
-const CollectionTile = ({ title, description, backgroundImage, sale }) => {
+const CollectionTile = ({
+  title,
+  description,
+  backgroundImage,
+  sale,
+  destination,
+}) => {
   return (
     <CollectionTileGrid>
       <StyledBackgroundImage fluid={backgroundImage} />
@@ -15,6 +22,7 @@ const CollectionTile = ({ title, description, backgroundImage, sale }) => {
         <div>
           <Title sale={sale}>{title}</Title>
           <Description sale={sale}>{description}</Description>
+          <StyledHomeLink sale={sale} to={destination}>Shop Now</StyledHomeLink>
         </div>
       </CollectionTileContent>
     </CollectionTileGrid>

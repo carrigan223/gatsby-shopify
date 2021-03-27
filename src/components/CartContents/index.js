@@ -24,12 +24,14 @@ const CartContents = () => {
   return (
     <section>
       <CartTitle>Your Cart</CartTitle>
-      <CartHeader>
-        <div>Product</div>
-        <div>Unit Price</div>
-        <QuantityContainer>Quantity</QuantityContainer>
-        <div style={{ marginLeft: '7px' }}>Total</div>
-      </CartHeader>
+      {!!checkout?.lineItems && (
+        <CartHeader>
+          <div>Product</div>
+          <div>Unit Price</div>
+          <QuantityContainer>Quantity</QuantityContainer>
+          <div style={{ marginLeft: '7px' }}>Total</div>
+        </CartHeader>
+      )}
       {checkout?.lineItems?.map(item => (
         <CartItem key={item.variant.id}>
           <div>
@@ -50,24 +52,33 @@ const CartContents = () => {
           </div>
         </CartItem>
       ))}
-      <CartFooter>
+      {!!checkout?.lineItems && (
+        <CartFooter>
+          <div>
+            <strong>Total:</strong>
+            <span> ${checkout?.totalPrice}</span>
+          </div>
+        </CartFooter>
+      )}
+      {!checkout?.lineItems && (
         <div>
-          <strong>Total:</strong>
-          <span> ${checkout?.totalPrice}</span>
+          <h4>Your Cart is Currently Empty</h4>
         </div>
-      </CartFooter>
+      )}
       <Footer>
         <div>
           <Button onClick={() => navigate(-1)}>Continue Shopping</Button>
         </div>
         <div>
-          <Button
-            onClick={() => {
-              window.location.href = checkout.webUrl;
-            }}
-          >
-            Checkout
-          </Button>
+          {!!checkout?.webUrl && (
+            <Button
+              onClick={() => {
+                window.location.href = checkout.webUrl;
+              }}
+            >
+              Checkout
+            </Button>
+          )}
         </div>
       </Footer>
     </section>

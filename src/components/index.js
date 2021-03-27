@@ -19,3 +19,4 @@ export * from './StyledLink';
 export * from './Filters';
 export * from './Checkbox';
 export * from './Search';
+export * from './Logo';

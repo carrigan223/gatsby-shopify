@@ -1,12 +1,20 @@
 import React from 'react';
-import { Cart, Search } from 'components';
+import { Link } from 'gatsby';
+import { Cart, Search, Logo } from 'components';
 import { HeaderWrapper } from './styles';
 
 const Header = () => {
   return (
     <HeaderWrapper>
-      <Search />
-      <Cart />
+      <div>
+        <Link to="/">
+          <Logo />
+        </Link>
+      </div>
+      <div>
+        <Search />
+        <Cart />
+      </div>
     </HeaderWrapper>
   );
 };

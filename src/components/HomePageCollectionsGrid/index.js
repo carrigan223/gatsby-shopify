@@ -16,6 +16,9 @@ const HomePageCollectionsGrid = ({ collections }) => {
       {!!SaleTile && (
         <CollectionTile
           sale
+          destination={`/all-products?c=${encodeURIComponent(
+            SaleTile.shopifyId
+          )}`}
           title={SaleTile.title}
           description={SaleTile.description}
           backgroundImage={SaleTile.image.localFile.childImageSharp.fluid}
@@ -25,6 +28,9 @@ const HomePageCollectionsGrid = ({ collections }) => {
       <RemainingCollectionsWrapper>
         {RemainingCollections.map(collection => (
           <CollectionTile
+            destination={`/all-products?c=${encodeURIComponent(
+              collection.shopifyId
+            )}`}
             title={collection.title}
             description={collection.description}
             backgroundImage={collection.image.localFile.childImageSharp.fluid}

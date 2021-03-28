@@ -1,6 +1,7 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import { StyledLogo } from './styles';
+import Img from 'gatsby-image';
 
 const Logo = () => {
   const data = useStaticQuery(graphql`
@@ -15,7 +16,11 @@ const Logo = () => {
     }
   `);
   console.log(data);
-  return <StyledLogo fixed={data.file.childImageSharp.fixed} />;
+  return (
+    <StyledLogo>
+      <Img fixed={data.file.childImageSharp.fixed} />
+    </StyledLogo>
+  );
 };
 
 export { Logo };

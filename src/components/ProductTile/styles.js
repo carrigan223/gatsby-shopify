@@ -6,7 +6,7 @@ export const ProductTileWrapper = styled.div`
   border: 2px solid rgba(0, 45, 114, 0.65);
   box-shadow: 2px 2px 20px grey;
   display: flex;
-  border-radius: 5px;
+  border-radius: 3px;
   padding: 10px;
   overflow: hidden;
   flex-direction: column;
@@ -36,7 +36,7 @@ export const ProductTileWrapper = styled.div`
 
 export const StyledImage = styled(Img)`
   box-shadow: 2px 2px 20px grey;
-  border-radius: 5px;
+  border-radius: 4px;
 `;
 
 export const Title = styled.h2`

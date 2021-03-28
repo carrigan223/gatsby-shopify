@@ -26,11 +26,11 @@ export const Button = styled.button`
   white-space: nowrap;
   margin-top: 5px;
   box-shadow: none;
-  /* ${fullWidthStyles} */
+  ${fullWidthStyles}
 
   &:hover:not(:disabled) {
     color: black;
-    background-color: #FF5910;
+    background-color: #ff5910;
     color: white;
     box-shadow: 3px 2px 8px 1px black;
   }

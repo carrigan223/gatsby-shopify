@@ -6,13 +6,13 @@ import { HeaderWrapper } from './styles';
 const Header = () => {
   return (
     <HeaderWrapper>
-      <div>
-        <Link to="/">
-          <Logo />
-        </Link>
-      </div>
-      <div>
+      <Link to="/">
+        <Logo />
+      </Link>
+      {/* <div>
         <Search />
+      </div> */}
+      <div>
         <Cart />
       </div>
     </HeaderWrapper>

@@ -2,12 +2,12 @@ import styled from 'styled-components';
 
 export const HeaderWrapper = styled.header`
   display: flex;
+  flex: 1;
   justify-content: space-between;
   align-items: flex-end;
   max-width: 1200px;
   margin: 0 auto;
   padding: 10px 20px;
-  height: 25vh;
   box-sizing: border-box;
   flex-wrap: wrap;
   background-image: linear-gradient(to bottom, grey, white);
@@ -16,11 +16,20 @@ export const HeaderWrapper = styled.header`
   box-shadow: 2px 2px 10px grey;
 
   @media (max-width: 470px) {
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    > div:first-child {
-      display: none;
+    justify-content: center;
+    padding: 0;
+
+    > div {
+      width: 100vw;
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      margin: 10px 0px;
+      border: 1px solid black;
     }
   }
 

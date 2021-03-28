@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const FiltersWrapper = styled.div`
     padding: 10px;
     border: 2px solid #002D72;
-    border-radius: 8px;
+    border-radius: 3px;
     box-shadow: 3px 3px 30px grey;
 `;
 

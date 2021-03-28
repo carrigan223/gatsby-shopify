@@ -29,7 +29,8 @@ const Search = () => {
   return (
     <SearchForm onSubmit={handleSubmit}>
       <SearchBar
-        placeholder="Search"
+        placeholder="Search Bar"
+        type="text"
         value={searchTerm}
         onChange={e => setSearchTerm(e.currentTarget.value)}
       />

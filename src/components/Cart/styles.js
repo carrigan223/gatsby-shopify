@@ -9,8 +9,7 @@ export const CartWrapper = styled(StyledLink).attrs(() => ({
   align-items: center;
   border: 3px solid #ff5910;
   background: white;
-  border-radius: 3px;
-  /* box-shadow: 1px 2px 30px 10px grey; */
+  border-radius: 6px;
   text-decoration: none;
   color: black;
 

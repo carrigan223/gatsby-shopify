@@ -4,16 +4,15 @@ export const HeaderWrapper = styled.header`
   display: flex;
   flex: 1;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   max-width: 1200px;
   margin: 0 auto;
   padding: 10px 20px;
   box-sizing: border-box;
   flex-wrap: wrap;
   background-image: linear-gradient(to bottom, grey, white);
-  border-bottom: 5px solid black;
-  margin-bottom: 3rem;
-  box-shadow: 2px 2px 10px grey;
+  border-bottom: 5px solid #002d72;
+  /* box-shadow: 2px 2px 10px grey; */
 
   @media (max-width: 470px) {
     flex: 1;
@@ -28,8 +27,7 @@ export const HeaderWrapper = styled.header`
       flex: 1;
       display: flex;
       justify-content: center;
-      margin: 10px 0px;
-      border: 1px solid black;
+      margin: 15px 0px;
     }
   }
 

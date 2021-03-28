@@ -1,6 +1,11 @@
 import React, { useContext } from 'react';
 import { Layout, HomePageCollectionsGrid, FeaturedProducts } from 'components';
 import ProductContext from '../context/ProductContext';
+import styled from 'styled-components';
+
+const StyledSection = styled.div`
+  
+`;
 
 const IndexPage = () => {
   //bringing in collections from context
@@ -16,7 +21,9 @@ const IndexPage = () => {
         while the below is conditionally rendering the products in the collection of featured if it exists
       */}
       {!!collections.find(collection => collection.title === 'Featured') && (
-        <FeaturedProducts />
+        <StyledSection>
+          <FeaturedProducts />
+        </StyledSection>
       )}
     </Layout>
   );

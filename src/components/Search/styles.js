@@ -7,7 +7,7 @@ export const SearchForm = styled.form`
 
 export const SearchBar = styled(Input)`
   border-radius: 3px;
-  padding-right: 40px;
+  /* padding-right: 40px; */
 
   :focus {
     outline: none;

@@ -20,3 +20,4 @@ export * from './Filters';
 export * from './Checkbox';
 export * from './Search';
 export * from './Logo';
+export * from './Navbar';

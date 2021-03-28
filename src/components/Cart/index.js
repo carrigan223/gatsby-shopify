@@ -20,8 +20,8 @@ const Cart = () => {
           <RiShoppingCartLine size="1.5em" color="#002d72" />
         </IconContainer>
         <TextContainer>
-          {/* this is cart info <span>${checkout?.totalPrice || '0.00'}</span>
-          <span>{totalQuantity}  item(s)</span> */}
+          <span>${checkout?.totalPrice || '0.00'}</span>
+          <span>{totalQuantity} item(s)</span>
         </TextContainer>{' '}
       </CartWrapper>
     </>

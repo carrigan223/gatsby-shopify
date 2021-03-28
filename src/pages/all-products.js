@@ -12,10 +12,9 @@ const Content = styled.div`
   grid-template-columns: 1fr 3fr;
 
   @media (max-width: 450px) {
-    display: grid;
-    grid-gap: 20px;
-    margin-top: 20px;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
   }
 `;
 

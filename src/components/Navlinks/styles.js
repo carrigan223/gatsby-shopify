@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 
 export const Navitem = styled(Link)`
   text-decoration: none;
-  color: black;
+  color: white;
   display: inline-block;
   white-space: nowrap;
   margin: 0 1vw;
@@ -34,37 +34,5 @@ export const Navitem = styled(Link)`
     padding: 20px 0;
     font-size: 1.5rem;
     z-index: 6;
-  }
-`;
-
-export const FooterWrapper = styled.div`
-  margin: 15px 23px;
-  padding-bottom: 15px;
-`;
-
-export const ContentWrapper = styled.div`
-  display: flex;
-  justify-content: space-evenly;
-  border-top: 3px solid grey;
-  padding-top: 15px;
-  text-shadow: 0px 2px 5px grey;
-  font-weight: bold;
-
-  > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  @media (max-width: 450px) {
-    /* grid-template-columns: 1fr 40px; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-
-    > div {
-      padding: 10px;
-    }
   }
 `;

@@ -3,6 +3,7 @@ import { Input, Button } from 'components';
 
 export const SearchForm = styled.form`
   display: flex;
+  margin-top: 15px;
 `;
 
 export const SearchBar = styled(Input)`
@@ -11,7 +12,6 @@ export const SearchBar = styled(Input)`
 
   :focus {
     outline: none;
-    box-shadow: 3px 3px 30px black;
   }
 `;
 

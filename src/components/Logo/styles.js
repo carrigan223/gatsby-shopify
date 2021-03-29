@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import Img from 'gatsby-image';
 
 export const StyledLogo = styled.div`
   border: 2px solid black;
@@ -8,5 +7,4 @@ export const StyledLogo = styled.div`
   align-items: center;
   padding-bottom: 10px;
   padding-top: -5px;
- 
 `;

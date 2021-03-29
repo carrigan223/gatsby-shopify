@@ -10,12 +10,6 @@ const Header = () => {
         <Link to="/">
           <Logo />
         </Link>
-        {/* <div>
-        <Search />
-      </div> */}
-        <div>
-          <Cart />
-        </div>
       </HeaderWrapper>
       <Navbar />
     </div>

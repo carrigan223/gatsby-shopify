@@ -14,10 +14,10 @@ export const CartWrapper = styled(StyledLink).attrs(() => ({
   color: black;
 
   :hover {
-    color: black;
+    
     background-color: #ff5910;
     color: white;
-    box-shadow: 3px 2px 8px 1px black;
+    box-shadow: 0px 0px 18px 10px white;
   }
 `;
 

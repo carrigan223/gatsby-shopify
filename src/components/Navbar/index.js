@@ -1,19 +1,30 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import { NavContainer, NavLinks } from './styles';
+import React, { useState } from 'react';
+import { Cart, Navlinks } from '../../components/';
+import { NavContainer, Navbox, Toggle, Hamburger } from './styles';
 
 const Navbar = () => {
+  const [navbarOpen, setNavbarOpen] = useState(false);
+
   return (
     <NavContainer>
       <div>
-        <NavLinks to="/all-products">Shop</NavLinks>
+        <Cart />
       </div>
-      <div>
-        <NavLinks to="/">About</NavLinks>
-      </div>
-      <div>
-        <NavLinks to="/">Contact</NavLinks>
-      </div>
+      <Toggle
+        navbarOpen={navbarOpen}
+        onClick={() => setNavbarOpen(!navbarOpen)}
+      >
+        {navbarOpen ? <Hamburger open /> : <Hamburger />}
+      </Toggle>
+      {navbarOpen ? (
+        <Navbox>
+          <Navlinks />
+        </Navbox>
+      ) : (
+        <Navbox open>
+          <Navlinks />
+        </Navbox>
+      )}
     </NavContainer>
   );
 };

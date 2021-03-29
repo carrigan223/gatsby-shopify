@@ -1,8 +1,11 @@
 import React from 'react';
-import { Layout } from 'components';
+import { Layout, SEO } from 'components';
 
 const Contact = () => {
-  return <Layout></Layout>;
+  return <Layout>
+          <SEO title="Contact Us" description="The Sharpest Collectibles Contact Page" />
+
+  </Layout>;
 };
 
 export default Contact;

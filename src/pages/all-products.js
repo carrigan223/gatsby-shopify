@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Layout, Filters, ProductsGrid } from 'components';
+import { Layout, Filters, ProductsGrid, SEO } from 'components';
 import styled from 'styled-components';
 import ProductContext from '../context/ProductContext';
 import queryString from 'query-string';
@@ -90,6 +90,11 @@ const ProductsPage = () => {
 
   return (
     <Layout>
+      <SEO
+        title="Products"
+        description="The Sharpest Collectibles Full Product catalog"
+      />
+
       {!!searchTerm && !!filteredProducts.length && (
         <h3>
           Search: <strong>"{searchTerm}"</strong>

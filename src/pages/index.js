@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Layout, HomePageCollectionsGrid, FeaturedProducts } from 'components';
+import { Layout, HomePageCollectionsGrid, FeaturedProducts, SEO } from 'components';
 import ProductContext from '../context/ProductContext';
 import styled from 'styled-components';
 
@@ -12,6 +12,7 @@ const IndexPage = () => {
   const { collections } = useContext(ProductContext);
   return (
     <Layout>
+      <SEO title="Homepage" description="The Sharpest Collectibles Homepage" />
       <HomePageCollectionsGrid
         collections={collections.filter(
           collection => collection.title !== 'Featured'

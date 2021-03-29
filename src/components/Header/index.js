@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { Cart, Search, Logo, Navbar } from 'components';
+import { Logo, Navbar } from 'components';
 import { HeaderWrapper } from './styles';
 
 const Header = () => {

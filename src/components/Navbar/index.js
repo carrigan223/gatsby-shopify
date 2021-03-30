@@ -1,6 +1,12 @@
 import React, { useState } from 'react';
 import { Cart, Navlinks } from '../../components/';
-import { NavContainer, Navbox, Toggle, Hamburger } from './styles';
+import {
+  NavContainer,
+  Navbox,
+  Toggle,
+  Hamburger,
+  NavboxToggle,
+} from './styles';
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -18,10 +24,22 @@ const Navbar = () => {
       </Toggle>
       {navbarOpen ? (
         <Navbox>
+          <NavboxToggle
+            navbarOpen={navbarOpen}
+            onClick={() => setNavbarOpen(!navbarOpen)}
+          >
+            {navbarOpen ? <Hamburger open /> : <Hamburger />}
+          </NavboxToggle>
           <Navlinks />
         </Navbox>
       ) : (
         <Navbox open>
+          <NavboxToggle
+            navbarOpen={navbarOpen}
+            onClick={() => setNavbarOpen(!navbarOpen)}
+          >
+            {navbarOpen ? <Hamburger open /> : <Hamburger />}
+          </NavboxToggle>
           <Navlinks />
         </Navbox>
       )}

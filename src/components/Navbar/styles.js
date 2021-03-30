@@ -4,7 +4,7 @@ export const NavContainer = styled.div`
   height: 10vh;
   display: flex;
   background-color: black;
-  position: fixed;
+  position: sticky;
   padding-top: 10px;
   height: 10vh;
   top: 0;
@@ -19,17 +19,12 @@ export const NavContainer = styled.div`
   border-bottom-right-radius: 20px;
   /* margin: 0 auto; */
   padding: 10px 5vw;
-  z-index: 2;
+  /* z-index: 2; */
   align-self: center;
-  box-shadow: 0px 8px 12px grey;
+  box-shadow: 0px 8px 12px black;
 
   @media (max-width: 768px) {
-    position: fixed;
-    padding-top: 10px;
-    height: 10vh;
-    top: 0;
-    left: 0;
-    right: 0;
+    position: sticky;
     align-items: center;
   }
 `;
@@ -95,11 +90,24 @@ export const Navbox = styled.div`
     border: 2px solid #ff5910;
     border-left: none;
     justify-content: flex-start;
-    padding-top: 10vh;
+    padding-top: 5vh;
     background-color: black;
     transition: all 0.4s ease-in;
     top: 18vh;
     bottom: 3vh;
     left: ${props => (props.open ? '-100%' : '0')};
+  }
+`;
+
+export const NavboxToggle = styled.div`
+  display: none;
+  width: 90%;
+  cursor: pointer;
+  padding-bottom: 2vh;
+  margin-top: none;
+
+  @media (max-width: 768px) {
+    display: flex;
+    justify-content: flex-end;
   }
 `;

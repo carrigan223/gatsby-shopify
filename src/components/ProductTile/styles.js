@@ -14,7 +14,7 @@ export const ProductTileWrapper = styled.div`
   > ${StyledLink} {
     color: white;
     border: 1px solid black;
-    background-color: #002D72;
+    background-color: black;
     text-align: center;
     display: block;
     padding: 5px;
@@ -24,12 +24,9 @@ export const ProductTileWrapper = styled.div`
     box-shadow: 3px 3px 25px grey;
     text-decoration: none;
     text-shadow: 2px 2px 2px grey;
-    
 
     :hover {
-        box-shadow: 9px 9px 30px 2px black;
-
-
+      box-shadow: 9px 9px 30px 2px #002d72;
     }
   }
 `;

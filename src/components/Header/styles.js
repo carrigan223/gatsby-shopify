@@ -24,7 +24,8 @@ export const HeaderWrapper = styled.header`
 
     > div:last-child {
       text-shadow: 2px 2px 3px #ff5910;
-      padding-right: 200px;
+      padding-bottom: 50px;
+      text-align: center;
     }
   }
 
@@ -46,6 +47,7 @@ export const HeaderWrapper = styled.header`
 
       > div:last-child {
         text-shadow: 2px 2px 3px #ff5910;
+        text-align: center;
       }
     }
   }

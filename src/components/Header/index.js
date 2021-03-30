@@ -1,17 +1,16 @@
 import React from 'react';
-import { Link } from 'gatsby';
-import { Logo, Navbar } from 'components';
+import { Navbar } from 'components';
 import { HeaderWrapper } from './styles';
 
 const Header = () => {
   return (
     <div>
       <HeaderWrapper>
-        <Link to="/">
+        {/* <Link to="/">
           <Logo />
-        </Link>
+        </Link> */}
+        <Navbar />
       </HeaderWrapper>
-      <Navbar />
     </div>
   );
 };

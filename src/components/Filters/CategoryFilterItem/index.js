@@ -17,7 +17,7 @@ const CategoryFilterItem = ({ title, id }) => {
   const collectionIds = qs.c?.split(',').filter(c => !!c) || [];
   //checking whether collection is checked
   const checked = collectionIds?.find(cId => cId === id);
-  const SearchTerm = qs.s;
+  const searchTerm = qs.s;
 
   //setting up the onclick to point to each collection
   //with a unique id
@@ -40,22 +40,21 @@ const CategoryFilterItem = ({ title, id }) => {
       newIds = collectionIds.map(cId => encodeURIComponent(cId));
     }
 
-    if (newIds.length && !SearchTerm) {
-      //navigate function to our collectionids array called
-      //with join breaking them up with a comma
+    if (newIds.length && !searchTerm) {
+      //if category but no searchTerm
       navigate(`${navigateTo}?c=${newIds.join(',')}`);
-    } else if (newIds.length && SearchTerm === true) {
+    } else if (newIds.length && !!searchTerm) {
+      //if category and search term have value
       navigate(
-        `${navigateTo}?c=${newIds.join(',')}?s=${encodeURIComponent(
-          SearchTerm
+        `${navigateTo}?c=${newIds.join(',')}&s=${encodeURIComponent(
+          searchTerm
         )}`
       );
-      console.log('else if line 53 category filter');
-    } else if (!newIds.length && SearchTerm === true) {
-      navigate(`${navigateTo}?s=${encodeURIComponent(SearchTerm)}`);
+    } else if (!newIds.length && !!searchTerm) {
+      //if no category but searchterm has value
+      navigate(`${navigateTo}?s=${encodeURIComponent(searchTerm)}`);
     } else {
-      //if no collections checked(newIds === empty array)
-      //we are going to navigate to just the base id
+      //anything else refreshes back to base
       navigate(`${navigateTo}`);
     }
   };

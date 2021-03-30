@@ -6,7 +6,7 @@ export const NavContainer = styled.div`
   background-color: black;
   position: fixed;
   padding-top: 10px;
-  height: 8vh;
+  height: 10vh;
   top: 0;
   left: 0;
   right: 0;
@@ -15,8 +15,9 @@ export const NavContainer = styled.div`
   justify-content: space-between;
   text-transform: uppercase;
   border-bottom: 2px solid #ff5910;
-  margin: 0 auto;
-  margin-bottom: 5vh;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  /* margin: 0 auto; */
   padding: 10px 5vw;
   z-index: 2;
   align-self: center;
@@ -25,7 +26,7 @@ export const NavContainer = styled.div`
   @media (max-width: 768px) {
     position: fixed;
     padding-top: 10px;
-    height: 8vh;
+    height: 10vh;
     top: 0;
     left: 0;
     right: 0;
@@ -86,12 +87,19 @@ export const Navbox = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
     position: fixed;
-    width: 100%;
+    width: 70%;
+    height: 50%;
+    border-bottom-right-radius: 33px;
+    border-top-right-radius: 33px;
+
+    border: 2px solid #ff5910;
+    border-left: none;
     justify-content: flex-start;
     padding-top: 10vh;
     background-color: black;
-    transition: all 0.3s ease-in;
-    top: 8vh;
+    transition: all 0.4s ease-in;
+    top: 18vh;
+    bottom: 3vh;
     left: ${props => (props.open ? '-100%' : '0')};
   }
 `;

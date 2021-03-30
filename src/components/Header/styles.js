@@ -7,9 +7,9 @@ export const HeaderWrapper = styled.header`
   align-items: center;
   padding-top: 14vh;
   margin-bottom: 5vh;
-  box-shadow: 0px 2px 5px black;
-  background-image: linear-gradient(to bottom, grey, white);
-  border-bottom: 5px solid #002d72;
+  /* box-shadow: 0px 2px 5px black; */
+  /* background-image: linear-gradient(to bottom, grey, white);
+  border-bottom: 5px solid #002d72; */
 
   @media (max-width: 768px) {
     flex: 1;

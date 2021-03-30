@@ -17,15 +17,16 @@ export const NavContainer = styled.div`
   border-bottom: 2px solid #ff5910;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  /* margin: 0 auto; */
   padding: 10px 5vw;
-  /* z-index: 2; */
+  z-index: 2;
   align-self: center;
   box-shadow: 0px 8px 12px black;
+  margin-bottom: 10vh;
 
   @media (max-width: 768px) {
     position: sticky;
     align-items: center;
+    z-index: 2;
   }
 `;
 

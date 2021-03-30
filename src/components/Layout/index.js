@@ -1,11 +1,11 @@
 import React from 'react';
 import { LayoutWrapper } from './styles';
-import { Header, Footer } from 'components';
+import {  Footer, Navbar } from 'components';
 
 const Layout = ({ children }) => {
   return (
     <>
-      <Header />
+      <Navbar />
       <LayoutWrapper>
         <main>{children}</main>
       </LayoutWrapper>

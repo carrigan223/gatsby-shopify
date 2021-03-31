@@ -23,6 +23,8 @@ module.exports = {
           'open sans:800i',
           `Train one\:400`,
           'Train one:400i',
+          `Permanent Marker\:400`,
+          'Permanent Marker:400i',
         ],
       },
     },

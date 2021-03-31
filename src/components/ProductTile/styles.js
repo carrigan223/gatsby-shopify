@@ -45,6 +45,7 @@ export const Title = styled.h2`
   text-underline-offset: 3px;
   padding-bottom: 2px;
   text-align: center;
+  font-family: 'Permanent Marker', 'Courier New', Courier, monospace;
 `;
 
 export const Description = styled.p`

@@ -22,6 +22,8 @@ export const CollectionTileGrid = styled.div`
 export const CollectionTileContent = styled.div`
   display: flex;
   flex-grow: 1;
+  font-family: 'Train One', 'Courier New', Courier, monospace;
+
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -65,6 +67,8 @@ export const Title = styled.h1`
 
 export const Description = styled.p`
   font-size: 20px;
+  font-family: 'Permanent Marker', 'Courier New', Courier, monospace;
+
   margin: 10px;
   padding: 5px;
   background: ${props => (props.sale ? 'red' : 'rgba(0, 0, 0, 0.3)')};
@@ -76,6 +80,7 @@ export const StyledHomeLink = styled(StyledLink)`
   border: 1px solid;
   padding: 8px 15px;
   color: black;
+
   text-decoration: none;
   background: white;
   border-color: ${props => (props.sale ? 'red' : '#ff5910')};

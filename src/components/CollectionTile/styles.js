@@ -80,6 +80,8 @@ export const StyledHomeLink = styled(StyledLink)`
   border: 1px solid;
   padding: 8px 15px;
   color: black;
+  font-family: 'Permanent Marker', 'Courier New', Courier, monospace;
+
 
   text-decoration: none;
   background: white;

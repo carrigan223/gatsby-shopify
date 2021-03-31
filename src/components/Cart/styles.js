@@ -12,9 +12,9 @@ export const CartWrapper = styled(StyledLink).attrs(() => ({
   border-radius: 6px;
   text-decoration: none;
   color: black;
+  font-family: 'Permanent Marker', 'Courier New', Courier, monospace;
 
   :hover {
-    
     background-color: #ff5910;
     color: white;
     box-shadow: 0px 0px 18px 10px white;

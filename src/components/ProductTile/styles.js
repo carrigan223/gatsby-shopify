@@ -3,13 +3,14 @@ import Img from 'gatsby-image';
 import { StyledLink } from '../StyledLink';
 
 export const ProductTileWrapper = styled.div`
-  border: 2px solid grey;
-  box-shadow: 2px 2px 20px grey;
+  border: 1px solid lightgrey;
+  box-shadow: 2px 2px 15px black;
   display: flex;
-  border-radius: 3px;
+  border-radius: 8px;
   padding: 10px;
   overflow: hidden;
   flex-direction: column;
+
 
   > ${StyledLink} {
     color: white;
@@ -24,6 +25,8 @@ export const ProductTileWrapper = styled.div`
     box-shadow: 3px 3px 25px grey;
     text-decoration: none;
     text-shadow: 2px 2px 2px grey;
+    font-family: 'Permanent Marker', 'Courier New', Courier, monospace;
+
 
     :hover {
       box-shadow: 9px 9px 30px 2px #002d72;

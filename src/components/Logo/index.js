@@ -8,7 +8,7 @@ const Logo = () => {
     query MyQuery {
       file(relativePath: { eq: "logo.png" }) {
         childImageSharp {
-          fixed(width: 300, height: 320) {
+          fixed(width: 200, height: 200) {
             ...GatsbyImageSharpFixed_withWebp
           }
         }

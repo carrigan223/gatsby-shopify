@@ -21,6 +21,8 @@ module.exports = {
           'open sans:700i',
           `open sans\:800`,
           'open sans:800i',
+          `Train one\:400`,
+          'Train one:400i',
         ],
       },
     },

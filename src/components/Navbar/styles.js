@@ -5,6 +5,7 @@ export const NavContainer = styled.div`
   height: 10vh;
   display: flex;
   flex: 1;
+  font-family: 'Train One', 'Courier New', Courier, monospace;
   background: rgb(0, 45, 114);
   position: sticky;
   padding-top: 10px;
@@ -115,6 +116,4 @@ export const NavboxToggle = styled.div`
   }
 `;
 
-export const LogoContainer = styled(Logo)`
-  
-`;
+export const LogoContainer = styled(Logo)``;

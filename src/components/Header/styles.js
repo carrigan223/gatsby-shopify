@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const HeaderWrapper = styled.header`
   display: flex;
+  font-family: 'Train One', 'Courier New', Courier, monospace;
   flex: 1;
   justify-content: center;
   padding-top: 14vh;

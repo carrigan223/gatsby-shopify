@@ -1,9 +1,11 @@
 import styled from 'styled-components';
+import { Logo } from '../../components';
 
 export const NavContainer = styled.div`
   height: 10vh;
   display: flex;
-  background-color: black;
+  flex: 1;
+  background: rgb(0, 45, 114);
   position: sticky;
   padding-top: 10px;
   height: 10vh;
@@ -20,7 +22,7 @@ export const NavContainer = styled.div`
   padding: 10px 5vw;
   z-index: 2;
   align-self: center;
-  box-shadow: 0px 8px 12px black;
+  box-shadow: 0 20px 20px -20px black;
   margin-bottom: 10vh;
 
   @media (max-width: 768px) {
@@ -92,7 +94,7 @@ export const Navbox = styled.div`
     border-left: none;
     justify-content: flex-start;
     padding-top: 5vh;
-    background-color: black;
+    background: rgb(0, 45, 114);
     transition: all 0.4s ease-in;
     top: 18vh;
     bottom: 3vh;
@@ -111,4 +113,8 @@ export const NavboxToggle = styled.div`
     display: flex;
     justify-content: flex-end;
   }
+`;
+
+export const LogoContainer = styled(Logo)`
+  
 `;

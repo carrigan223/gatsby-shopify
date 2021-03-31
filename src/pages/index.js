@@ -5,6 +5,7 @@ import {
   FeaturedProducts,
   SEO,
   Header,
+  
 } from 'components';
 import ProductContext from '../context/ProductContext';
 import styled from 'styled-components';
@@ -17,6 +18,7 @@ const IndexPage = () => {
   return (
     <>
       <Header />
+
       <Layout>
         <SEO
           title="Homepage"

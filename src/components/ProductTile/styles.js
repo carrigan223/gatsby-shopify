@@ -3,7 +3,7 @@ import Img from 'gatsby-image';
 import { StyledLink } from '../StyledLink';
 
 export const ProductTileWrapper = styled.div`
-  border: 2px solid rgba(0, 45, 114, 0.65);
+  border: 2px solid grey;
   box-shadow: 2px 2px 20px grey;
   display: flex;
   border-radius: 3px;

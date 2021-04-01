@@ -24,3 +24,4 @@ export * from './Navbar';
 export * from './Navlinks';
 export * from './MiniLogo';
 export * from './InstaLogo';
+export * from './ContactForm'

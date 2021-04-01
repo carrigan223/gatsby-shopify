@@ -27,7 +27,7 @@ const Contact = () => {
         Whether searching for that particular card, looking for avenues to sell
         parts of your collections, questions about current and future products,
         or you just want to give us some feedback. We look forward to hearing
-        from you, so drop us a line, and will do our best to get back to you
+        from you, so drop us a line, and we will do our best to get back to you
         quickly.
       </ContactP>
       <ContactForm />

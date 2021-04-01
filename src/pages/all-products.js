@@ -18,6 +18,10 @@ const Content = styled.div`
   }
 `;
 
+const SearchQuantity = styled.h4`
+  font-family: 'Permanent Marker', 'Courier New', Courier, monospace;
+`;
+
 const ProductsPage = () => {
   //bringing in our product and collection data from context
   const { products, collections } = useContext(ProductContext);
@@ -100,7 +104,11 @@ const ProductsPage = () => {
           Search: <strong>"{searchTerm}"</strong>
         </h3>
       )}
-      {!!filteredProducts.length && <h4>{filteredProducts.length} Products</h4>}
+      {!!filteredProducts.length && (
+        <SearchQuantity>
+          Showing {filteredProducts.length} Products
+        </SearchQuantity>
+      )}
 
       <Content>
         <Filters collections={collections} />

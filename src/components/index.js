@@ -22,3 +22,4 @@ export * from './Search';
 export * from './Logo';
 export * from './Navbar';
 export * from './Navlinks';
+export * from './MiniLogo';

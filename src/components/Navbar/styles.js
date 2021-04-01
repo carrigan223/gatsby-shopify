@@ -4,7 +4,6 @@ import { Logo } from '../../components';
 export const NavContainer = styled.div`
   height: 10vh;
   display: flex;
-  flex: 1;
   font-family: 'Train One', 'Courier New', Courier, monospace;
   background: rgb(0, 45, 114);
   position: sticky;
@@ -31,13 +30,19 @@ export const NavContainer = styled.div`
     align-items: center;
     z-index: 2;
   }
+
+  @media (min-width: 768px) {
+    > div:first-child {
+      display: none;
+    }
+  }
 `;
 
 export const Toggle = styled.div`
   display: none;
   height: 100%;
   cursor: pointer;
-  padding: 0 10vw;
+  margin-right: 3vw;
 
   @media (max-width: 768px) {
     display: flex;

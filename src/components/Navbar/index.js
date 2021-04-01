@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Cart, Navlinks } from '../../components/';
+import { MiniLogo, Cart, Navlinks } from '../../components/';
 import {
   NavContainer,
   Navbox,
@@ -13,6 +13,9 @@ const Navbar = () => {
 
   return (
     <NavContainer>
+      <div>
+        <MiniLogo />
+      </div>
       <div>
         <Cart />
       </div>

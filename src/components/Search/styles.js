@@ -7,7 +7,7 @@ export const SearchForm = styled.form`
 `;
 
 export const SearchBar = styled(Input)`
-  border-radius: 3px;
+  border-radius: 8px;
   /* padding-right: 40px; */
 
   :focus {
@@ -16,6 +16,6 @@ export const SearchBar = styled(Input)`
 `;
 
 export const SearchButton = styled(Button)`
-  border-radius: 3px;
+  border-radius: 8px;
   margin-left: 5px;
 `;

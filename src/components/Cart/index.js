@@ -22,7 +22,7 @@ const Cart = () => {
         <TextContainer>
           <span>${checkout?.totalPrice || '0.00'}</span>
           <span>{totalQuantity} item(s)</span>
-        </TextContainer>{' '}
+        </TextContainer>
       </CartWrapper>
     </>
   );

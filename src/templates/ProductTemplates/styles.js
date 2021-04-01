@@ -1,5 +1,11 @@
 import styled from 'styled-components';
 
+export const StyledSelect = styled.select`
+  border-radius: 8px;
+  box-shadow: 3px 3px 5px grey;
+  border: 2px solid black;
+`;
+
 export const Grid = styled.section`
   display: grid;
   grid-template-columns: 1fr;
@@ -11,6 +17,17 @@ export const Grid = styled.section`
     flex-direction: column;
     align-items: center;
     order: 2;
+
+    > h1 {
+      font-family: 'Permanent Marker', 'Courier New', Courier, monospace;
+      text-decoration: underline;
+      text-decoration-color: #FF5910;
+    }
+    
+    > p {
+      text-align: center;
+      width: 70%;
+    }
   }
   //setting a media query for desktop to display multiple columns
   @media (min-width: 760px) {
@@ -39,6 +56,11 @@ export const Price = styled.div`
   margin: 40px 0;
   font-weight: bold;
   font-size: 30px;
+  text-shadow: 2px 2px 2px grey;
 `;
 
-
+export const SelectHeader = styled.div`
+  display: flex;
+  justify-content: center;
+  font-family: 'Permanent Marker', 'Courier New', Courier, monospace;
+`;

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Logo } from 'components';
-import { Link } from 'gatsby';
 import { HeaderWrapper } from './styles';
 
 const Header = () => {

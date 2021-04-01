@@ -8,7 +8,7 @@ export const ProductQuantityAdderWrapper = styled.div`
     justify-content: center;
     padding: 2px;
     font-size: 1.5rem;
-    text-shadow: grey 1px   1px  1px ;
+    text-shadow: grey 1px 1px 1px;
   }
   > form {
     display: flex;
@@ -17,3 +17,4 @@ export const ProductQuantityAdderWrapper = styled.div`
     align-items: center;
   }
 `;
+

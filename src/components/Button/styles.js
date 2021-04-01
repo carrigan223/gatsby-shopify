@@ -15,7 +15,7 @@ export const Button = styled.button`
   height: 44px;
   box-shadow: none;
   font-size: 16px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Permanent Marker', 'Courier New', Courier, monospace;
   cursor: pointer;
   font-weight: bold;
   text-transform: uppercase;

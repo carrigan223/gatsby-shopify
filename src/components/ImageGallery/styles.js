@@ -23,8 +23,8 @@ export const ImageGalleryWrapper = styled.section`
 `;
 
 export const MainImage = styled(Image)`
-  border-radius: 10%;
+  border-radius: 8px;
   margin-bottom: 25px;
   box-shadow: 5px 3px 24px 2px grey;
-  border: 2px solid black;
+  border: 1px solid grey;
 `;

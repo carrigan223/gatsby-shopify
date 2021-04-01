@@ -8,7 +8,13 @@ import {
   Button,
   SEO,
 } from 'components';
-import { Grid, SelectWrapper, Price } from './styles';
+import {
+  Grid,
+  SelectWrapper,
+  Price,
+  StyledSelect,
+  SelectHeader,
+} from './styles';
 import CartContext from '../../context/CartContext';
 import { navigate, useLocation } from '@reach/router'; //using reach router client side to make shareable urls
 import queryString from 'query-string';
@@ -73,8 +79,10 @@ const ProductTemplate = props => {
             <>
               {product?.variants.length > 1 && (
                 <SelectWrapper>
-                  <strong>Options</strong>
-                  <select
+                  <SelectHeader>
+                    <strong>Options</strong>
+                  </SelectHeader>
+                  <StyledSelect
                     value={selectedVariant.id}
                     onChange={handleVariantSelect}
                   >
@@ -83,7 +91,7 @@ const ProductTemplate = props => {
                         {variant.title}
                       </option>
                     ))}
-                  </select>
+                  </StyledSelect>
                 </SelectWrapper>
               )}
               {!!selectedVariant && (

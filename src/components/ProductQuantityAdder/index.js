@@ -1,7 +1,8 @@
 import React, { useState, useContext } from 'react';
-import { Button } from '../Button';
 import { Input } from '../Input';
-import { ProductQuantityAdderWrapper } from './styles';
+import { Button } from '../Button';
+
+import { ProductQuantityAdderWrapper, StyledButton } from './styles';
 import CartContext from '../../context/CartContext';
 
 const ProductQuantityAdder = ({ variantId, available }) => {

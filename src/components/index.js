@@ -20,8 +20,9 @@ export * from './Filters';
 export * from './Checkbox';
 export * from './Search';
 export * from './Logo';
+export * from './LogoAlt';
 export * from './Navbar';
 export * from './Navlinks';
 export * from './MiniLogo';
 export * from './InstaLogo';
-export * from './ContactForm'
+export * from './ContactForm';

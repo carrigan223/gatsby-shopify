@@ -13,6 +13,7 @@ const ContactP = styled.p`
   color: #002d72;
   text-shadow: 1px 1px 3px grey;
   text-align: center;
+  padding: 2vh 12vw 3vh;
 `;
 
 const Contact = () => {

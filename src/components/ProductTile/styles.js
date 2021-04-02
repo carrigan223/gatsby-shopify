@@ -28,6 +28,7 @@ export const ProductTileWrapper = styled.div`
     font-family: 'Permanent Marker', 'Courier New', Courier, monospace;
 
 
+
     :hover {
       box-shadow: 9px 9px 30px 2px #002d72;
     }

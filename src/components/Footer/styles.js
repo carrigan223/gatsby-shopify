@@ -76,10 +76,11 @@ export const ContentWrapper = styled.div`
 
 export const RowWrapperTop = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 
   > div {
     text-align: center;
+    flex-grow: 1;
     > p {
       color: grey;
       font-weight: normal;
@@ -99,9 +100,21 @@ export const RowWrapperTop = styled.div`
   }
 `;
 
+export const Terms = styled.div`
+  font-size: 0.25rem;
+  color: grey;
+  color: #002d72;
+
+  :hover {
+    color: #ff5910;
+  }
+`;
+
 export const RowWrapperBottom = styled.div`
   display: flex;
   margin-top: 2rem;
+  justify-content: space-evenly;
+  align-items: center;
 
   > div {
     font-size: 0.25rem;
@@ -109,6 +122,18 @@ export const RowWrapperBottom = styled.div`
 
     > a {
       color: #002d72;
+    }
+  }
+
+  @media (max-width: 450px) {
+    /* grid-template-columns: 1fr 40px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    > div {
+      padding: 10px;
     }
   }
 `;
@@ -167,4 +192,29 @@ export const MailIcon = styled(FaRegEnvelope)`
       width: 100%;
     }
   }
+`;
+
+export const PaymentContainer = styled.div`
+  display: flex;
+  justify-content: center;
+
+  > div {
+    background: #002d72;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+    margin-top: 10px;
+    border-radius: 8px;
+    color: white;
+  }
+`;
+
+export const FooterP = styled.div`
+  margin-top: 5px;
+  font-size: 0.85rem;
+  color: grey;
+  font-weight: normal;
 `;

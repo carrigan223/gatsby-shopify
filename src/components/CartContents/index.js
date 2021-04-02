@@ -19,7 +19,7 @@ const CartContents = () => {
   const handleAdjustQuantity = ({ quantity, variantId }) => {
     updateLineItem({ quantity, variantId });
   };
-  console.log(checkout);
+  console.log("this is checkout ",checkout);
 
   return (
     <section>
@@ -33,7 +33,7 @@ const CartContents = () => {
         </CartHeader>
       )}
       {checkout?.lineItems?.map(item => (
-        <CartItem key={item.variant.id}>
+        <CartItem key={item.id}>
           <div>
             <div>{item.title}</div>
             <div>

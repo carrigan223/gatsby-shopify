@@ -22,6 +22,7 @@ export const Grid = styled.section`
       font-family: 'Permanent Marker', 'Courier New', Courier, monospace;
       text-decoration: underline;
       text-decoration-color: #FF5910;
+      text-align: center;
     }
     
     > p {

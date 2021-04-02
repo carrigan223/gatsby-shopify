@@ -3,12 +3,12 @@ import { useStaticQuery, graphql } from 'gatsby';
 import { StyledLogo } from './styles';
 import Img from 'gatsby-image';
 
-const InstaLogo = () => {
+const LogoAlt = () => {
   const data = useStaticQuery(graphql`
-    query InstaLogo {
-      file(relativePath: { eq: "Insta-Logo.png" }) {
+    query LogoAlt {
+      file(relativePath: { eq: "logo2.png" }) {
         childImageSharp {
-          fixed(width: 30, height: 30) {
+          fixed(width: 200, height: 200) {
             ...GatsbyImageSharpFixed_withWebp
           }
         }
@@ -23,4 +23,4 @@ const InstaLogo = () => {
   );
 };
 
-export { InstaLogo };
+export { LogoAlt };

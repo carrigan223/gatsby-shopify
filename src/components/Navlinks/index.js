@@ -6,7 +6,7 @@ const Navlinks = () => {
     <>
       <Navitem to="/">Home</Navitem>
       <Navitem to="/all-products">Shop</Navitem>
-      <Navitem to="/">About</Navitem>
+      <Navitem to="/about">About</Navitem>
       <Navitem to="/contact">Contact</Navitem>
     </>
   );

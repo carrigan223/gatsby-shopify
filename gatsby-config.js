@@ -14,18 +14,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          `open sans\:400`,
-          'open sans:400i',
-          `open sans\:700`,
-          'open sans:700i',
-          `open sans\:800`,
-          'open sans:800i',
-          `Train one\:400`,
-          'Train one:400i',
-          `Permanent Marker\:400`,
-          'Permanent Marker:400i',
-        ],
+        fonts: [`open sans\:400`, `Train one\:400`, `Permanent Marker\:400`],
       },
     },
     {

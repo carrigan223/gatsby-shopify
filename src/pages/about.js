@@ -6,7 +6,10 @@ const AboutContainer = styled.div`
   display: flex;
   flex: 1;
   flex-direction: column;
-  padding: 0 25vw;
+
+  @media (min-width: 768px) {
+    padding: 0 25vw;
+  }
 `;
 
 const AboutTile = styled.div`
@@ -21,7 +24,8 @@ const AboutTile = styled.div`
   border-top: none;
 
   h2 {
-    font-size: 2.5rem;
+    font-size: 1.75rem;
+
     font-family: 'Train One', 'Courier New', Courier, monospace;
     color: white;
     text-shadow: 2px 2px 5px grey;

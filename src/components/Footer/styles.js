@@ -18,7 +18,7 @@ export const Navitem = styled(Link)`
     left: 0;
     right: 0;
     width: 0%;
-    content: '.';
+    content: '';
     color: transparent;
     background: #ff5910;
     height: 1px;

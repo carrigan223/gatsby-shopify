@@ -53,7 +53,7 @@ export const Title = styled.h2`
 
 export const Description = styled.p`
   text-align: center;
-  color: grey;
+  color: black;
   padding: 0 20px 10px 20px;
 `;
 

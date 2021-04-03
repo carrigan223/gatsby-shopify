@@ -13,7 +13,7 @@ const ProductTile = ({ title, description, imageFluid, minPrice, handle }) => {
   const lowestPrice = parseInt(minPrice).toFixed(2); //adjusting the display format
   return (
     <ProductTileWrapper>
-      <Link to={`/products/${handle}`}>
+      <Link to={`/products/${handle}`} alt={`Link to ${handle} product`}>
         <StyledImage fluid={imageFluid} />
       </Link>
       <Title>{title}</Title>

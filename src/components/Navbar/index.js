@@ -17,7 +17,7 @@ const Navbar = () => {
     <NavContainer>
       <div>
         <Link to="/">
-          <MiniLogo />
+          <MiniLogo alt="logo link to home" />
         </Link>
       </div>
       <div>

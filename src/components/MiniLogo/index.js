@@ -8,7 +8,7 @@ const MiniLogo = () => {
     query MiniLogo {
       file(relativePath: { eq: "logoMini.png" }) {
         childImageSharp {
-          fixed(width: 200, height: 200) {
+          fixed(width: 50, height: 50) {
             ...GatsbyImageSharpFixed_withWebp
           }
         }

@@ -51,7 +51,7 @@ export const Title = styled.h1`
   text-shadow: 2px 2px 2px rgba(252, 89, 16, 0.75);
   //if the sale prop is present different styling
   border: ${props => (props.sale ? '2px solid white' : '3px solid #002d72')};
-  background: ${props => (props.sale ? 'red' : 'rgba(0, 0, 0, 0.3)')};
+  background: ${props => (props.sale ? 'black' : 'rgba(0, 0, 0, 0.3)')};
   box-shadow: ${props =>
     props.sale
       ? '1px 3px 8px 0.8px white'
@@ -71,7 +71,7 @@ export const Description = styled.p`
 
   margin: 10px;
   padding: 5px;
-  background: ${props => (props.sale ? 'red' : 'rgba(0, 0, 0, 0.3)')};
+  background: ${props => (props.sale ? 'black' : 'rgba(0, 0, 0, 0.3)')};
   border: ${props => (props.sale ? '2px solid white' : 'none')};
   box-shadow: ${props => (props.sale ? '1px 3px 8px 0.8px white' : 'none')};
 `;
@@ -81,7 +81,6 @@ export const StyledHomeLink = styled(StyledLink)`
   padding: 8px 15px;
   color: black;
   font-family: 'Permanent Marker', 'Courier New', Courier, monospace;
-
 
   text-decoration: none;
   background: white;

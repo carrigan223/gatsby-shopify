@@ -5,7 +5,7 @@ require('dotenv').config({
 module.exports = {
   siteMetadata: {
     title: `The Sharpest Collectibles`,
-    description: `Your one stop for Trading Cards and a variety of other collectibles`,
+    description: `The Sharpest Collectibles is an online seller of Trading Cards, Coins and a variety of other collectibles and sports memoribilia`,
     author: `Andrew Carrigan`,
     siteUrl: `https://thesharpestcollectibles.com/`,
   },
@@ -37,6 +37,7 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-preload-fonts`,
+    `gatsby-plugin-robots-txt`,
     `gatsby-optional-chaining`,
     {
       resolve: `gatsby-plugin-google-fonts`,

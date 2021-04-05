@@ -10,31 +10,7 @@ module.exports = {
     siteUrl: `https://thesharpestcollectibles.com/`,
   },
   plugins: [
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `The Sharpest Collectibles`,
-        short_name: `The Sharpest`,
-        icons: [
-          {
-            src: '/images/PWAicon.png',
-            type: 'image/png',
-            sizes: '192x192',
-          },
-          {
-            src: '/images/PWAiconLg.png',
-            type: 'image/png',
-            sizes: '512x512',
-          },
-        ],
-        start_url: `/`,
-        background_color: `#002D72`,
-        theme_color: `#FF5910`,
-        display: `standalone`,
-      },
-    },
     `gatsby-plugin-advanced-sitemap`,
-    `gatsby-plugin-offline`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-preload-fonts`,
     `gatsby-plugin-robots-txt`,
@@ -63,5 +39,18 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `The Sharpest Collectibles`,
+        short_name: `The Sharpest`,
+        start_url: `/`,
+        background_color: `#002D72`,
+        theme_color: `#FF5910`,
+        display: `standalone`,
+        icon: `src/images/PWAicon.png`,
+      },
+    },
+    `gatsby-plugin-offline`,
   ],
 };

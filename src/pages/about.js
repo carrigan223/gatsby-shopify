@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layout, SEO, LogoAlt } from 'components';
+import { Layout, Seo, LogoAlt } from 'components';
 import styled from 'styled-components';
 
 const AboutContainer = styled.div`
@@ -52,7 +52,7 @@ const AboutTile = styled.div`
 const About = () => {
   return (
     <Layout>
-      <SEO
+      <Seo
         title="About Us"
         description="The Sharpest Collectibles About and description Page"
       />

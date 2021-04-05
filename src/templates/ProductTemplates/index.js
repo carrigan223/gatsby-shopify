@@ -6,7 +6,7 @@ import {
   ImageGallery,
   ProductQuantityAdder,
   Button,
-  SEO,
+  Seo,
 } from 'components';
 import {
   Grid,
@@ -67,7 +67,7 @@ const ProductTemplate = props => {
 
   return (
     <Layout>
-      <SEO
+      <Seo
         title={props.data.shopifyProduct.title}
         description={props.data.shopifyProduct.description}
       />

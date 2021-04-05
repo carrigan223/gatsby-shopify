@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Layout, Filters, ProductsGrid, SEO } from 'components';
+import { Layout, Filters, ProductsGrid, Seo } from 'components';
 import styled from 'styled-components';
 import ProductContext from '../context/ProductContext';
 import queryString from 'query-string';
@@ -55,8 +55,6 @@ const ProductsPage = () => {
     });
   }
 
-  console.log(collectionProductMap);
-
   const filterByCollection = product => {
     //checking to see if we have any selected collectionIds
     if (Object.keys(selectedCollectionIdsMap).length) {
@@ -82,19 +80,16 @@ const ProductsPage = () => {
         product.description.toLowerCase().indexOf(searchTerm.toLowerCase()) >= 0
       );
     } else {
-      console.log('no search term');
-
       return true;
     }
   };
   const filteredProducts = products
     .filter(filterBySearchTerm)
     .filter(filterByCollection);
-  console.log('products:', products);
 
   return (
     <Layout>
-      <SEO
+      <Seo
         title="Products"
         description="The Sharpest Collectibles Full Product catalog"
       />

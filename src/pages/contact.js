@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layout, SEO, ContactForm } from 'components';
+import { Layout, Seo, ContactForm } from 'components';
 import styled from 'styled-components';
 
 const ContactTitle = styled.h1`
@@ -19,7 +19,7 @@ const ContactP = styled.p`
 const Contact = () => {
   return (
     <Layout>
-      <SEO
+      <Seo
         title="Contact Us"
         description="The Sharpest Collectibles Contact Page"
       />

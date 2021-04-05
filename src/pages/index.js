@@ -3,7 +3,7 @@ import {
   Layout,
   HomePageCollectionsGrid,
   FeaturedProducts,
-  SEO,
+  Seo,
   Header,
   
 } from 'components';
@@ -20,7 +20,7 @@ const IndexPage = () => {
       <Header />
 
       <Layout>
-        <SEO
+        <Seo
           title="Homepage"
           description="The Sharpest Collectibles Homepage"
         />

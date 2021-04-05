@@ -1,8 +1,8 @@
 import React from 'react';
-import { Layout, SEO } from 'components';
+import { Layout, Seo } from 'components';
 import styled from 'styled-components';
 
-export const TermsContainer = styled.div`
+const TermsContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 7vw;
@@ -28,7 +28,7 @@ export const TermsContainer = styled.div`
 const TermPage = () => {
   return (
     <Layout>
-      <SEO title="Terms" description="Terms and Conditions" />
+      <Seo title="Terms" description="Terms and Conditions" />
       <TermsContainer>
         <h3>TERMS OF SERVICE</h3>
         <h5>OVERVIEW</h5>

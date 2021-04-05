@@ -7,9 +7,36 @@ module.exports = {
     title: `The Sharpest Collectibles`,
     description: `Your one stop for Trading Cards and a variety of other collectibles`,
     author: `Andrew Carrigan`,
+    siteUrl: `https://thesharpestcollectibles.com/`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `The Sharpest Collectibles`,
+        short_name: `The Sharpest`,
+        icons: [
+          {
+            src: '/images/PWAicon.png',
+            type: 'image/png',
+            sizes: '192x192',
+          },
+          {
+            src: '/images/PWAiconLg.png',
+            type: 'image/png',
+            sizes: '512x512',
+          },
+        ],
+        start_url: `/`,
+        background_color: `#002D72`,
+        theme_color: `#FF5910`,
+        display: `standalone`,
+      },
+    },
+    `gatsby-plugin-advanced-sitemap`,
+    `gatsby-plugin-offline`,
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-preload-fonts`,
     `gatsby-optional-chaining`,
     {
       resolve: `gatsby-plugin-google-fonts`,

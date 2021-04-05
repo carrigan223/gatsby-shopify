@@ -11,6 +11,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-advanced-sitemap`,
+    `gatsby-plugin-offline`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-preload-fonts`,
     `gatsby-plugin-robots-txt`,
@@ -42,15 +43,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `The Sharpest Collectibles`,
-        short_name: `The Sharpest`,
+        name: `gatsby-shopify-starter`,
+        short_name: `starter`,
         start_url: `/`,
-        background_color: `#002D72`,
-        theme_color: `#FF5910`,
+        background_color: `#663399`,
+        theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/PWAicon.png`,
+        icon: `src/images/gatsby-icon.png`,
       },
     },
-    `gatsby-plugin-offline`,
   ],
 };

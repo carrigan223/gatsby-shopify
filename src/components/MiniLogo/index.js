@@ -15,7 +15,6 @@ const MiniLogo = () => {
       }
     }
   `);
-  console.log(data);
   return (
     <StyledLogo>
       <Img fixed={data.file.childImageSharp.fixed} />

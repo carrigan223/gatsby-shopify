@@ -138,7 +138,7 @@ export const RowWrapperBottom = styled.div`
   }
 `;
 
-export const FooterTitle = styled.text`
+export const FooterTitle = styled.p`
   color: black;
 `;
 

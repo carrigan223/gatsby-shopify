@@ -2,10 +2,10 @@ import React, { useContext } from 'react';
 import {
   Layout,
   HomePageCollectionsGrid,
-  FeaturedProducts,
+  FeaturedCards,
+  FeaturedCoins,
   Seo,
   Header,
-  
 } from 'components';
 import ProductContext from '../context/ProductContext';
 import styled from 'styled-components';
@@ -25,16 +25,25 @@ const IndexPage = () => {
           description="The Sharpest Collectibles Homepage"
         />
         <HomePageCollectionsGrid
-          collections={collections.filter(
-            collection => collection.title !== 'Featured'
+          collections={collections.filter(collection =>
+            !collection.title.includes('Featured')
           )}
         />
         {/* the above code is filtering out the Featured collection for our collection categories
         while the below is conditionally rendering the products in the collection of featured if it exists
       */}
-        {!!collections.find(collection => collection.title === 'Featured') && (
+        {!!collections.find(
+          collection => collection.title === 'Featured Trading Cards'
+        ) && (
           <StyledSection>
-            <FeaturedProducts />
+            <FeaturedCards />
+          </StyledSection>
+        )}
+        {!!collections.find(
+          collection => collection.title === 'Featured Coins'
+        ) && (
+          <StyledSection>
+            <FeaturedCoins />
           </StyledSection>
         )}
       </Layout>

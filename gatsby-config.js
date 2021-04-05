@@ -47,7 +47,7 @@ module.exports = {
         start_url: `/`,
         background_color: `#002D72`,
         theme_color: `#FF5910`,
-        display: `standalone`,
+        display: `minimal-ui`,
         icon: `src/images/PWAicon.png`,
       },
     },

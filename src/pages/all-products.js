@@ -91,7 +91,7 @@ const ProductsPage = () => {
     <Layout>
       <Seo
         title="Products"
-        description="The Sharpest Collectibles Full Product catalog"
+        description="The Sharpest Collectibles Full Product catalog displaying coins and trading cards"
       />
 
       {!!searchTerm && !!filteredProducts.length && (

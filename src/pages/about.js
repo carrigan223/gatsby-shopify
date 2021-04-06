@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layout, Seo, LogoAlt, NyImage } from 'components';
+import { Layout, Seo, LogoAlt, NyImage, AirplaneImg } from 'components';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 
@@ -106,6 +106,19 @@ const About = () => {
             Collectibles events such as pop up stores. Feel free to{' '}
             <StyledLink to="/contact">contact us</StyledLink> for news and info
             on upcoming events.
+          </p>
+        </AboutTile>
+        <AboutTile>
+          <AirplaneImg />
+          <NyTitleContainer>
+            <h2>Proudly NYC</h2>
+          </NyTitleContainer>
+          <p>
+            Here at the Sharpest Collectibles we are passionate about
+            collectibles. Whether you have have something your not sure about
+            the value, or you looking to offload some of your collection, Feel
+            free to <StyledLink to="/contact">contact us</StyledLink>. We are
+            always happy to help and provide assitance anyway we can.
           </p>
         </AboutTile>
       </AboutContainer>

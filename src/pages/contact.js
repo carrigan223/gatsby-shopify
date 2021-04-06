@@ -21,7 +21,7 @@ const Contact = () => {
     <Layout>
       <Seo
         title="Contact Us"
-        description="The Sharpest Collectibles Contact Page"
+        description="The Sharpest Collectibles Contact Page for contacting us"
       />
       <ContactTitle>The Sharpest Collectibles</ContactTitle>
       <ContactP>

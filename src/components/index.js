@@ -28,3 +28,5 @@ export * from './MiniLogo';
 export * from './InstaLogo';
 export * from './NyImage';
 export * from './ContactForm';
+export * from './AirplaneImg';
+export * from './QuestionImg';

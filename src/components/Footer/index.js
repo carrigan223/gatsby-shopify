@@ -22,6 +22,7 @@ import {
   Terms,
   PaymentContainer,
   FooterP,
+  AttributionContainer,
 } from './styles';
 
 const Footer = () => {
@@ -60,14 +61,26 @@ const Footer = () => {
         </RowWrapperTop>
 
         <RowWrapperBottom>
-          <div>
-            social media clipart PNG from{' '}
-            <a href="https://icons8.com/">icons8</a>
-          </div>
-          <Link to="/terms">
-            <Terms>Terms and Conditions</Terms>
-          </Link>
-          <div>Icons Provided by Font Awesome</div>
+          <AttributionContainer>
+            <Link to="/terms">
+              <Terms>Terms and Conditions</Terms>
+            </Link>
+            <div>
+              social media clipart PNG from{' '}
+              <a href="https://icons8.com/">icons8</a>
+            </div>
+            <div>Icons Provided by Font Awesome</div>
+            <div>
+              <a href="https://www.vecteezy.com/free-vector/paper-airplane">
+                Paper Airplane Vectors by Vecteezy
+              </a>
+            </div>
+            <div>
+              <a href="https://www.vecteezy.com/free-vector/3d-question-mark">
+                3d Question Mark Vectors by Vecteezy
+              </a>
+            </div>
+          </AttributionContainer>
           <PaymentContainer>
             <div>
               <FaCcDiscover />

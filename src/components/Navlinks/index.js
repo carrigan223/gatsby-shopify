@@ -8,6 +8,7 @@ const Navlinks = () => {
       <Navitem to="/all-products">Shop</Navitem>
       <Navitem to="/about">About</Navitem>
       <Navitem to="/contact">Contact</Navitem>
+      <Navitem to="/help">Help</Navitem>
     </>
   );
 };

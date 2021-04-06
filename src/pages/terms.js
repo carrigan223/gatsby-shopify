@@ -28,7 +28,7 @@ const TermsContainer = styled.div`
 const TermPage = () => {
   return (
     <Layout>
-      <Seo title="Terms" description="Terms and Conditions" />
+      <Seo title="Terms" description="Terms and Conditions for The Sharpest Collectibles" />
       <TermsContainer>
         <h3>TERMS OF SERVICE</h3>
         <h5>OVERVIEW</h5>

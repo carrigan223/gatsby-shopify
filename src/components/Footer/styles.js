@@ -3,6 +3,17 @@ import { Link } from 'gatsby';
 import { FaRegEnvelope } from 'react-icons/fa';
 import { GiPhone } from 'react-icons/gi';
 
+export const AttributionContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  > div {
+    > a {
+      color: #002d72;
+    }
+  }
+`;
+
 export const Navitem = styled(Link)`
   font-family: 'Permanent Marker', 'Courier New', Courier, monospace;
   text-decoration: none;

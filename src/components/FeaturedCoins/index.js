@@ -16,7 +16,7 @@ const FeaturedCoins = () => {
   // as props to our featured product grid
   return (
     <section>
-      <FeaturedHeader>Featured Trading Cards</FeaturedHeader>
+      <FeaturedHeader>Featured Collectible Coins</FeaturedHeader>
       <ProductsGrid products={featuredCollection.products} />
     </section>
   );

@@ -10,7 +10,7 @@ const Filters = () => {
   return (
     <div>
       <FiltersWrapper>
-        <Title>Collections</Title>
+        <Title>Search By Collections</Title>
         {collections.map(collection => (
           <CategoryFilterItem
             key={collection.shopifyId}
@@ -18,6 +18,7 @@ const Filters = () => {
             title={collection.title}
           />
         ))}
+        <Title>Search By Keywords</Title>
         <Search />
       </FiltersWrapper>
     </div>

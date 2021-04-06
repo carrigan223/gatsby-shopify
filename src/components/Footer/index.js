@@ -38,7 +38,7 @@ const Footer = () => {
           </div>
           <div style={{ flexGrow: 11 }}>
             <div>
-              <Navitem to="/">
+              <Navitem to="/contact">
                 <FooterTitle>Contact Us</FooterTitle>
               </Navitem>
             </div>

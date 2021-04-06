@@ -10,7 +10,8 @@ module.exports = {
     siteUrl: `https://thesharpestcollectibles.com/`,
   },
   plugins: [
-    `gatsby-plugin-advanced-sitemap`,
+    `gatsby-plugin-preact`,
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-preload-fonts`,
     `gatsby-plugin-robots-txt`,

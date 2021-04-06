@@ -4,32 +4,11 @@ import { FaRegEnvelope } from 'react-icons/fa';
 import { GiPhone } from 'react-icons/gi';
 
 export const Navitem = styled(Link)`
+  font-family: 'Permanent Marker', 'Courier New', Courier, monospace;
   text-decoration: none;
-  color: black;
-  display: inline-block;
-  white-space: nowrap;
-  margin: 0 1vw;
-  transition: all 200ms ease-in;
-  position: relative;
-
-  :after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 0%;
-    content: '';
-    color: transparent;
-    background: #ff5910;
-    height: 1px;
-    transition: all 0.4s ease-in;
-  }
 
   :hover {
-    color: #ff5910;
-    ::after {
-      width: 100%;
-    }
+    text-shadow: 2px 2px 20px #ff5910;
   }
 
   @media (max-width: 768px) {

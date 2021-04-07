@@ -111,7 +111,7 @@ const About = () => {
         <AboutTile>
           <AirplaneImg />
           <NyTitleContainer>
-            <h2>Proudly NYC</h2>
+            <h2>Passion for Collectibles</h2>
           </NyTitleContainer>
           <p>
             Here at the Sharpest Collectibles we are passionate about

@@ -22,7 +22,7 @@ const IndexPage = () => {
       <Layout>
         <Seo
           title="Homepage"
-          description="The Sharpest Collectibles Homepage and enty point"
+          description="The Sharpest Collectibles Homepage, Your stop for Trading Cards coins and other collectibles."
         />
         <HomePageCollectionsGrid
           collections={collections.filter(collection =>

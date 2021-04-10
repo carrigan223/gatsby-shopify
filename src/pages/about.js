@@ -105,7 +105,7 @@ const About = () => {
             operation, if you are a NY local keep an eye for The Sharpest
             Collectibles events such as pop up stores. Feel free to{' '}
             <StyledLink to="/contact">contact us</StyledLink> for news and info
-            on upcoming events.
+            on any upcoming events.
           </p>
         </AboutTile>
         <AboutTile>

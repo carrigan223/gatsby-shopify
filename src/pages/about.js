@@ -101,7 +101,7 @@ const About = () => {
           </NyTitleContainer>
 
           <p>
-            The Sharpest Collectibles is proudly a local Ney York City run
+            The Sharpest Collectibles is a local Ney York City run
             operation, if you are a NY local keep an eye out for The Sharpest
             Collectibles events such as pop up stores. Feel free to{' '}
             <StyledLink to="/contact">contact us</StyledLink> for news and info

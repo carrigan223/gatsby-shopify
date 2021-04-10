@@ -39,13 +39,13 @@ const IndexPage = () => {
             <FeaturedCards />
           </StyledSection>
         )}
-        {!!collections.find(
+        {/* {!!collections.find(
           collection => collection.title === 'Featured Coins'
         ) && (
           <StyledSection>
             <FeaturedCoins />
           </StyledSection>
-        )}
+        )} */}
       </Layout>
     </>
   );

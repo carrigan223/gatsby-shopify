@@ -3,7 +3,6 @@ import {
   Layout,
   HomePageCollectionsGrid,
   FeaturedCards,
-  FeaturedCoins,
   Seo,
   Header,
 } from 'components';

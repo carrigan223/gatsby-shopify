@@ -88,10 +88,10 @@ const About = () => {
             <LogoAlt />
           </div>
           <p>
-            The Sharpest Collectibles is your destination for quality
-            collectibles. We pride ourselves in providing you with fantastic
-            service in providing you with reliably exceptional collectibles to
-            add to your collection.
+            The Sharpest Collectibles is your destination for quality Trading
+            Cards and other collectibles. We pride ourselves in providing you
+            with fantastic service in providing you with reliably exceptional
+            collectibles to add to your collection.
           </p>
         </AboutTile>
         <AboutTile>
@@ -101,9 +101,9 @@ const About = () => {
           </NyTitleContainer>
 
           <p>
-            The Sharpest Collectibles is a local Ney York City run
-            operation, if you are a NY local keep an eye out for The Sharpest
-            Collectibles events such as pop up stores. Feel free to{' '}
+            The Sharpest Collectibles is a local Ney York City run operation, if
+            you are a NY local keep an eye out for The Sharpest Collectibles
+            events such as pop up stores. Feel free to{' '}
             <StyledLink to="/contact">contact us</StyledLink> for news and info
             on any upcoming events.
           </p>

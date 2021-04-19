@@ -10,7 +10,6 @@ import {
 import ProductContext from '../context/ProductContext';
 import styled from 'styled-components';
 
-const StyledSection = styled.div``;
 
 // const HeaderContainer = styled.div`
 //   display: flex;
